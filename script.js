@@ -56,7 +56,7 @@ function displayMessage(sender, message) {
 function callApiAndDisplayResponse(apiKey, userInput) {
     const apiUrl = 'https://rcgjjtcs.cloud.sealos.io/v1/chat/completions';
     const data = {
-        model: "gpt-4",
+        model: "Writer",
         messages: [
             { role: "user", content: userInput }
         ],
