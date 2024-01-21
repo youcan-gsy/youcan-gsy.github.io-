@@ -10,20 +10,10 @@ body {
     background-color: #f0f2f5;
 }
 
-.api-key-input {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.api-key-input {
-    position: absolute;
-    top: 400px;
-    left: 2100px; /* 根据侧边栏的宽度调整，确保输入栏在侧边栏右侧可见 */
-}
 
 
 .chat-container {
+     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,7 +24,12 @@ body {
     border-radius: 8px;
     overflow: hidden;
 }
-
+.api-key-input {
+    position: absolute;
+    bottom: 10px; /* 根据需要调整 */
+    left: 500px; /* 根据需要调整 */
+    z-index: 10; /* 确保输入框位于最上层 */
+}
 .chat-display {
     height: 650px;
     width: 100%;
@@ -48,7 +43,10 @@ body {
     display: flex;
     padding: 10px;
 }
-
+.chat-input {
+    position: relative; /* 如果需要的话 */
+    padding-right: 150px; /* 确保发送按钮和输入框不会覆盖 API 输入框，根据实际情况调整 */
+}
 .chat-input input {
     flex-grow: 1;
     padding: 10px;
