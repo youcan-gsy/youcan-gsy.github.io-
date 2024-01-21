@@ -18,8 +18,8 @@ body {
 
 .api-key-input {
     position: absolute;
-    top: 10px;
-    left: 2100px; /* 根据侧边栏的宽度调整，确保输入栏在侧边栏右侧可见 */
+    top: 100px;
+    left: 00px; /* 根据侧边栏的宽度调整，确保输入栏在侧边栏右侧可见 */
 }
 
 
