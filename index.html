@@ -6,24 +6,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="api-key-input">
-        <input type="text" id="apiKey" placeholder="输入API密钥...">
-    </div>
     <div class="chat-container">
         <div id="chatDisplay" class="chat-display"></div>
         <div class="chat-input">
             <input type="text" id="userInput" placeholder="输入消息...">
             <button id="sendBtn">发送</button>
+            <div class="api-key-input">
+                <input type="text" id="apiKey" placeholder="输入API密钥...">
+            </div>
         </div>
     </div>
-<div class="sidebar">
-    <select id="modelSelector">
-        <option value="gpt-3.5-turbo">3.5</option>
-        <option value="gpt-4.0">4.0</option>
-        <option value="Writer">改写</option>
-        <!-- 根据需要添加更多模型 -->
-    </select>
-</div>
+    <div class="sidebar">
+        <select id="modelSelector">
+            <option value="gpt-3.5-turbo">3.5</option>
+            <option value="gpt-4.0">4.0</option>
+            <option value="Writer">改写</option>
+            <!-- 根据需要添加更多模型 -->
+        </select>
+    </div>
     
     <script src="script.js"></script>
 </body>
