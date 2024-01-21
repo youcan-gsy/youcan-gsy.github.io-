@@ -58,7 +58,7 @@ function callApiAndDisplayResponse(apiKey, userInput) {
     const data = {
         model: "Writer",
         messages: [
-            { role: "user", content: userInput }
+            { role: "user", content:  '中文回复我，' + userInput }
         ],
         presence_penalty: 0
     };
