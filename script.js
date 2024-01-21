@@ -80,3 +80,11 @@ function callApiAndDisplayResponse(apiKey, userInput) {
         console.error('Error:', error);
     });
 }
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('modelSelector').addEventListener('change', function() {
+        var selectedModel = this.value;
+        // 根据selectedModel更新API请求或其他逻辑
+        console.log("用户选择的模型:", selectedModel);
+        // 例如，更新API URL或请求参数
+    });
+});
