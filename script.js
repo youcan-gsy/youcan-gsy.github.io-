@@ -39,11 +39,24 @@ function displayMessageLetterByLetter(message, element) {
         }
     }, 5); // 调整为所需的速度
 }
+function displayMessage(sender, message) {
+    const chatDisplay = document.getElementById('chatDisplay');
+    const messageDiv = document.createElement('div');
+    messageDiv.textContent = `${sender}: ${message}`;
+    chatDisplay.appendChild(messageDiv);
+
+    // 添加分隔
+    const separator = document.createElement('div');
+    separator.style.height = '1em'; // 或者使用 <br>
+    chatDisplay.appendChild(separator);
+
+    chatDisplay.scrollTop = chatDisplay.scrollHeight; // 滚动到最新消息
+}
 
 function callApiAndDisplayResponse(apiKey, userInput) {
     const apiUrl = 'https://rcgjjtcs.cloud.sealos.io/v1/chat/completions';
     const data = {
-        model: "Writer",
+        model: "gpt-4",
         messages: [
             { role: "user", content: userInput }
         ],
