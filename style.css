@@ -16,9 +16,12 @@ body {
     left: 10px;
 }
 
-.api-key-input input {
-    padding: 8px;
+.api-key-input {
+    position: absolute;
+    top: 10px;
+    left: 2100px; /* 根据侧边栏的宽度调整，确保输入栏在侧边栏右侧可见 */
 }
+
 
 .chat-container {
     display: flex;
@@ -65,4 +68,20 @@ body {
 
 .chat-input button:hover {
     background-color: #0056b3;
+}
+.sidebar {
+    position: fixed; /* 固定位置，使其不随页面滚动 */
+    left: 0;
+    top: 0;
+    width: 200px; /* 侧边栏宽度 */
+    height: 100%; /* 侧边栏高度，占满整个视窗高度 */
+    background-color: #f0f2f5; /* 背景颜色 */
+    padding: 20px; /* 内边距 */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* 添加一些阴影效果 */
+}
+
+#modelSelector {
+    width: 100%; /* 使下拉列表占满侧边栏宽度 */
+    padding: 10px;
+    margin-bottom: 20px; /* 与其他元素的间距 */
 }
