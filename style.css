@@ -33,7 +33,7 @@ body {
 }
 
 .chat-display {
-    height: 600px;
+    height: 650px;
     width: 100%;
     overflow-y: auto;
     padding: 20px;
