@@ -58,7 +58,7 @@ function callApiAndDisplayResponse(apiKey, userInput) {
     const data = {
         model: "Writer",
         messages: [
-            { role: "user", content:  '中文回复我，' + userInput }
+            { role: "user", content:  '不使用插件，直接对下面的话进行修改：' + userInput }
         ],
         presence_penalty: 0
     };
